@@ -1,0 +1,41 @@
+<html>
+  <head>
+    <title>My First React Assignment</title>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react-dom.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.21.1/babel.min.js"></script>
+<script type="text/babel">
+class ShoppingList extends React.Component {
+constructor(props){
+super(props);
+this.state = {
+number: 3  
+}
+}
+render() {
+    return (
+      <div className="shopping-list">
+        <h1>Shopping List for {this.props.name}</h1>
+        <ul>
+<li>Quinoa</li>
+<li>Chicken</li>
+<li>Cilantro</li>
+</ul>
+<p> Number of Groceries: {this.state.number} </p>
+      </div>
+    );
+  }
+}
+ReactDOM.render(<ShoppingList name="Brittany" />,document.getElementById('root')
+);
+
+</script>
+  </head>
+  <body>
+<section>
+ <div id="root"></div>
+    
+</section>
+ </body>
+</html>
+</html>
